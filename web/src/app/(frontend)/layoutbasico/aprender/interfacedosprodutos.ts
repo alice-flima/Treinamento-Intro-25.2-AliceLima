@@ -1,9 +1,10 @@
 
-  export default interface ProdutoCard {
-  id: number;
-  nome: string;
-  preco: number;
-  descricao: string;
-  quantidade: 0;
+ export default interface ProdutoType {
+    id: number;
+    nome: string;
+    preco: number;
+    descricao: string;
+    quantidade: number;
+ 
  }
- //ProdutoCard(1, "Pão Tradicional", 5, "seila", 0)
+ 
