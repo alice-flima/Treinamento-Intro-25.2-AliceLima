@@ -5,8 +5,8 @@ import type { Role } from "./generated/prisma";
 
 // Configuration for different page types
 const ROUTE_CONFIG = {
-  authRequired: [
-    "/aprender",
+ authRequired: [
+    //"/aprender",
     "/dashboard",
     "/perfil",
     "/settings",

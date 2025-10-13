@@ -5,10 +5,10 @@ import Link from 'next/link';
 function Embarcar({ isLogged }: { isLogged: boolean }) {
   return (
     <Link
-      href={isLogged ? '/aprender' : '/cadastro'}
-      className="text-pink-50 text-4xl button-lg border-pink-200 bg-pink-500 colorTransition hover:bg-pink-400"
+      href={isLogged ? '/aprender' : '/layoutbasico/aprender'}
+      className="text-orange-50 text-4xl button-lg border-orange-200 bg-orange-500 colorTransition hover:bg-pink-400"
     >
-      {isLogged ? 'Continue Aprendendo' : 'Embarque agora'}
+      {isLogged ? 'Continue Aprendendo' : 'Monte o seu Dogão'}
     </Link>
   );
 }

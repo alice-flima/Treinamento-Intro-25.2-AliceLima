@@ -1,8 +1,9 @@
 import Link from "next/link";
 import NavbarLogo from "../NavbarLogo";
-import { UserRound } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
+import { User} from "lucide-react";
 
-function LandingPagesNav({ isLogged }: { isLogged: boolean }) {
+function LandingPagesNav() {
   return ( 
     <nav className="w-full py-6 px-8
     flex items-center justify-between">
@@ -12,25 +13,18 @@ function LandingPagesNav({ isLogged }: { isLogged: boolean }) {
 
       <ul className="flex items-center gap-4 text-xl">
         <li>
-          <Link href="/escolas" className="font-medium" >Escolas</Link>
+          <h4 className="font-medium" >Olá, Ntequinho!</h4>
         </li>
-        {isLogged ? (
-          <li className="ml-8">
+        <li className="ml-8">
             <Link href='/aprender' className="button-md border-pink-200 text-pink-50 bg-pink-500 flex items-center gap-2">
-              <UserRound /> Aprender
+              <ShoppingCart /> Carrinho
             </Link>
           </li>
-        )
-        : (
-          <>
-            <li className="ml-8">
-              <Link href='/login' className="button-md ">Entrar</Link>
-            </li>
-            <li>
-              <Link href='/cadastro' className="button-md border-pink-200 text-pink-50 bg-pink-500">Cadastro</Link>
-            </li>
-          </>
-        )}
+        <li className="ml-8">
+            <Link href='/login' className="button-md border-pink-200 text-pink-50 bg-pink-500 flex items-center gap-2">
+              <User/> Login
+            </Link>
+          </li>
       </ul>
     </nav>
    );
