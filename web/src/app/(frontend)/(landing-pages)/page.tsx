@@ -13,14 +13,14 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen">
-      <LandingPagesNav isLogged={isLogged} />
+      <LandingPagesNav  />
       
       <main className="h-[70vh] w-full pt-20 pb-16
       flex items-center justify-center gap-24 xl:gap-30">
        
 
         <div className="flex flex-col gap-6">
-          <h1 className="font-bold text-5xl">Monte seu Dogão</h1>
+          <h1 className="font-bold text-5xl">Dogão</h1>
           <p className="text-xl font-medium [&>span]:text-orange-500 [&>span]:font-bold">
             Escolha o que <span>te interessa</span> e customize para o seu modo<br/>
             preferido de aprender, com <span>vídeos</span>, <span>textos</span>, <span>podcasts</span>,<br/>

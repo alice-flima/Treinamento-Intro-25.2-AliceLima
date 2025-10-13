@@ -3,7 +3,7 @@ import NavbarLogo from "../NavbarLogo";
 import { ShoppingCart } from "lucide-react";
 import { User} from "lucide-react";
 
-function LandingPagesNav({ isLogged }: { isLogged: boolean }) {
+function LandingPagesNav() {
   return ( 
     <nav className="w-full py-6 px-8
     flex items-center justify-between">
