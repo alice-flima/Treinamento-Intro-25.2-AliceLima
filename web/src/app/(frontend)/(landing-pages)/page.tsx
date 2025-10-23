@@ -13,7 +13,7 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen">
-      <LandingPagesNav  />
+      <LandingPagesNav itensCarrinho={0} Preco={0} />
       
       <main className="h-[70vh] w-full pt-20 pb-16
       flex items-center justify-center gap-24 xl:gap-30">
